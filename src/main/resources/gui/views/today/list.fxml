@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" styleClass="container"
+           xmlns="http://javafx.com/javafx/8.0.171">
+    <VBox>
+        <TableView fx:id="table" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="categoryColumn" text="Categoría" />
+                <TableColumn fx:id="devicesColumn" text="Cantidad de disp. actualmente" />
+                <TableColumn fx:id="amountColumn" text="Cantidad de personas actualmente" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </VBox>
+</StackPane>

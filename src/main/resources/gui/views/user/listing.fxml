@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" fx:id="root" styleClass="container"
+           xmlns="http://javafx.com/javafx/8.0.171">
+    <VBox>
+        <HBox>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+            <HBox fx:id="btnContainer" alignment="CENTER_LEFT" spacing="10.0">
+                <JFXButton fx:id="newButton" styleClass="btn,btn-green" text="Nuevo" textFill="WHITE">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-plus"/>
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="editButton" disable="true" styleClass="btn,btn-blue" text="Editar">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-edit"/>
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="deleteButton" disable="true" styleClass="btn,btn-orange" text="Eliminar">
+                    <graphic>
+                        <FontIcon iconLiteral="fas-trash-alt"/>
+                    </graphic>
+                </JFXButton>
+            </HBox>
+        </HBox>
+        <TableView fx:id="table" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="usernameColumn" text="Nombre de usuario" />
+                <TableColumn fx:id="emailColumn" text="Email" />
+                <TableColumn fx:id="stateColumn" text="Estado" />
+                <TableColumn fx:id="roleColumn" text="Rol" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </VBox>
+</StackPane>

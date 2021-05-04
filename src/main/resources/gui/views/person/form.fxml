@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="250.0">
+        <StackPane rotate="-1.2" styleClass="effect-paper" />
+        <StackPane rotate="1.2" styleClass="effect-paper" />
+        <VBox spacing="30.0" styleClass="container-box">
+            <VBox spacing="30.0">
+                <JFXComboBox fx:id="typeField" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Tipo" />
+                <JFXTextField fx:id="idField" disable="true" labelFloat="true" promptText="ID" />
+                <JFXTextField fx:id="firstnameField" labelFloat="true" promptText="Nombre" />
+            <JFXTextField fx:id="lastnameField" labelFloat="true" promptText="Apellido" />
+                <JFXTextField fx:id="cuiField" labelFloat="true" promptText="CUIL/CUIT" />
+            <JFXDatePicker fx:id="birthdateField" maxWidth="1.7976931348623157E308" promptText="Fecha de nacimiento" />
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" spacing="15.0">
+                <JFXButton fx:id="cancelButton" styleClass="btn,btn-gray" text="Cancelar" />
+                <JFXButton fx:id="submitButton" styleClass="btn,btn-green" text="Guardar" />
+            </HBox>
+        </VBox>
+    </StackPane>
+</StackPane>

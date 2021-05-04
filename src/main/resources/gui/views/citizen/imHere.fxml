@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="500.0">
+        <StackPane rotate="-1.2" styleClass="effect-paper" />
+        <StackPane rotate="1.2" styleClass="effect-paper" />
+        <HBox styleClass="container-box">
+            <VBox fx:id="imNotHereBox" spacing="30.0" HBox.hgrow="ALWAYS">
+                <VBox alignment="CENTER" spacing="30.0" VBox.vgrow="ALWAYS">
+                    <Label text="Registrado en:" />
+                    <Label fx:id="spaceLabel" text="-" />
+                </VBox>
+                <HBox alignment="CENTER">
+                    <JFXButton fx:id="imNotHere" styleClass="btn,btn-green" text="Ya no estoy aquí" />
+                </HBox>
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets>
+            </VBox>
+            <VBox fx:id="imHereBox" prefHeight="160.0" prefWidth="120.0" spacing="30.0" HBox.hgrow="ALWAYS">
+                <VBox alignment="CENTER" spacing="30.0" VBox.vgrow="ALWAYS">
+                    <JFXTextField fx:id="amountField" labelFloat="true" promptText="Cantidad de personas" />
+                    <JFXComboBox fx:id="spaceField" labelFloat="true" maxWidth="1.7976931348623157E308" promptText="Espacio" />
+                </VBox>
+                <HBox alignment="CENTER">
+                    <JFXButton fx:id="imHere" disable="true" styleClass="btn,btn-green" text="Estoy aquí" />
+                </HBox>
+            </VBox>
+        </HBox>
+    </StackPane>
+</StackPane>

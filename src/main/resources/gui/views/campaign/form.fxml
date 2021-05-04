@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+    <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0"
+               prefWidth="250.0">
+        <StackPane rotate="-1.2" styleClass="effect-paper"/>
+        <StackPane rotate="1.2" styleClass="effect-paper"/>
+        <VBox spacing="30.0" styleClass="container-box">
+            <VBox spacing="30.0">
+                <JFXTextField fx:id="idField" disable="true" labelFloat="true" promptText="ID"/>
+                <JFXTextArea fx:id="messageField" labelFloat="true" promptText="Mensaje"/>
+            </VBox>
+            <HBox alignment="CENTER_RIGHT" spacing="15.0">
+                <JFXButton fx:id="cancelButton" styleClass="btn,btn-gray" text="Cancelar"/>
+                <JFXButton fx:id="submitButton" styleClass="btn,btn-green" text="Guardar"/>
+            </HBox>
+        </VBox>
+    </StackPane>
+</StackPane>
